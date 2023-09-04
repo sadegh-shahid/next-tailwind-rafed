@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function kitchenSection() {
+export default function KitchenSection() {
   return (
     <div>kitchenSection</div>
   )
