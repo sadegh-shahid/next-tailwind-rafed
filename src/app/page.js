@@ -11,26 +11,26 @@ import React from 'react'
 export default function Home() {
   return (
     <>
-      <header className='container bg-rafedWhite-w1 h-14 drop-shadow-xl flex items-center px-4'>
+      <header className='bg-rafedWhite-w1 h-14 drop-shadow-xl flex items-center px-4'>
         <Header></Header>
       </header>
       <main className='mt-10'>
-        <section>
+        <section className='px-4'>
           <TopSection></TopSection>
         </section>
-        <section>
+        <section className='px-4'>
           <QuestionSection></QuestionSection>
         </section>
-        <section>
+        <section className='px-4'>
           <EnmatSection></EnmatSection>
         </section>
-        <section>
+        <section className='px-4'>
           <WomenInSocietySection></WomenInSocietySection>
         </section>
-        <section>
+        <section className='px-4'>
           <KitchenSection></KitchenSection>
         </section>
-        <section>
+        <section className='px-4'>
           <MotherAndChildSection></MotherAndChildSection>
         </section>
       </main>
