@@ -4,11 +4,11 @@ import { PersonCircle, List,Search } from "react-bootstrap-icons";
 export default function Header() {
   return (
     <>
-      <List className="text-2xl "/>
+      <List className="text-2xl md:hidden"/>
       <img
         src={"/svg/Logo-big.svg"}
         alt="logo-big"
-        className="hidden md:block"
+        className="hidden md:block h-20 mt-4"
       />
       <img
         src={"/svg/Logo-small.svg"}

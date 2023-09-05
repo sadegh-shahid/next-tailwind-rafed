@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,6 +20,10 @@ module.exports = {
         w1: '#F5F5F5',
         w2: '#F0F0F0'
       }
+    },
+    fontFamily: {
+      Almarai: ['Almarai', 'Noto Sanse', ...defaultTheme.fontFamily.sans],
+      NotoSanse: ['Noto Sanse', 'Almarai', ...defaultTheme.fontFamily.sans]
     }
   },
   plugins: [],

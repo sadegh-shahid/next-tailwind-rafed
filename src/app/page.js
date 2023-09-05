@@ -11,26 +11,26 @@ import React from 'react'
 export default function Home() {
   return (
     <>
-      <header className='bg-rafedWhite-w1 h-14 drop-shadow-xl flex items-center px-4'>
+      <header className='bg-rafedWhite-w1 h-14 md:h-16 md:px-32 drop-shadow-xl flex items-center px-4'>
         <Header></Header>
       </header>
-      <main className='mt-10'>
-        <section className='px-4'>
+      <main className='mt-16'>
+        <section className='px-3 md:px-32 mb-12'>
           <TopSection></TopSection>
         </section>
-        <section className='px-4'>
+        <section className='px-3 md:px-32 py-12 bg-rafedWhite-w1'>
           <QuestionSection></QuestionSection>
         </section>
-        <section className='px-4'>
+        <section className='px-3 md:px-32'>
           <EnmatSection></EnmatSection>
         </section>
-        <section className='px-4'>
+        <section className='px-3 md:px-32'>
           <WomenInSocietySection></WomenInSocietySection>
         </section>
-        <section className='px-4'>
+        <section className='px-3 md:px-32'>
           <KitchenSection></KitchenSection>
         </section>
-        <section className='px-4'>
+        <section className='px-3 md:px-32'>
           <MotherAndChildSection></MotherAndChildSection>
         </section>
       </main>

@@ -1,18 +1,20 @@
 import React from "react";
+import ImageCard from "@/components/ImageCard";
 import { HouseDoorFill, ChevronLeft } from "react-bootstrap-icons";
 export default function TopSection() {
   return (
     <>
-      <ul className="flex items-center">
+      <ul className="flex items-center font-Almarai">
         <li className="flex items-center">
           <a href="#">
             <HouseDoorFill className="text-rafedPurple text-lg " />
-
           </a>
           <ChevronLeft className="text-xs mx-1" />
         </li>
         <li className="flex items-center">
-          <a href="#" className="font-bold text-sm">ریحانه</a>
+          <a href="#" className="font-bold text-sm">
+            ریحانه
+          </a>
           <ChevronLeft className="text-xs mx-1" />
         </li>
         <li>
@@ -21,18 +23,46 @@ export default function TopSection() {
           </a>
         </li>
       </ul>
-      <div className="flex flex-1 mt-5">
-        <figure class="relative inline-block min-w-full">
-          <img
-            src={"/img/img-1.png"}
-            class="mb-4 min-w-full h-auto rounded-lg "
-            alt="top section big image" />
-          <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
-            A caption for the above image.
-          </figcaption>
-        </figure>
-      </div>
+      <div className="grid md:grid-cols-2 mt-5 gap-4">
+        <ImageCard
+          imgSrc={"/img/img-1.png"}
+          imgAlt={"A caption for the above image."}
+          captionText={"A caption for the above image."}
+          className="h-56 md:h-[21rem]"
+          link="#"
+        />
 
+        <div className="grid grid-cols-2 gap-4 h-8">
+          <ImageCard
+            imgSrc={"/img/img-1.png"}
+            imgAlt={"A caption for the above image."}
+            captionText={"A caption for the above image."}
+            className="h-40"
+            link="#"
+          />
+          <ImageCard
+            imgSrc={"/img/img-1.png"}
+            imgAlt={"A caption for the above image."}
+            captionText={"A caption for the above image."}
+            className="h-40"
+            link="#"
+          />
+          <ImageCard
+            imgSrc={"/img/img-1.png"}
+            imgAlt={"A caption for the above image."}
+            captionText={"A caption for the above image."}
+            className="h-40"
+            link="#"
+          />
+          <ImageCard
+            imgSrc={"/img/img-1.png"}
+            imgAlt={"A caption for the above image."}
+            captionText={"A caption for the above image."}
+            className="h-40"
+            link="#"
+          />
+        </div>
+      </div>
     </>
   );
 }
