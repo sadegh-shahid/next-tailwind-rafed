@@ -32,7 +32,7 @@ export default function TopSection() {
           link="#"
         />
 
-        <div className="grid grid-cols-2 gap-4 h-8">
+        <div className="grid grid-cols-2 gap-4">
           <ImageCard
             imgSrc={"/img/img-1.png"}
             imgAlt={"A caption for the above image."}
