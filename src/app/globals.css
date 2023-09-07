@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Almarai;
-    src: url("../../public/fonts/Almarai-Regular.ttf");
+  font-family: Almarai;
+  src: url("../../public/fonts/Almarai-Regular.ttf");
 }
 
 @font-face {
-    font-family: NotoSans;
-    src: url("../../public/fonts/NotoSans/NotoSansArabic-Regular.ttf");
+  font-family: NotoSans;
+  src: url("../../public/fonts/NotoSans/NotoSansArabic-Regular.ttf");
 }

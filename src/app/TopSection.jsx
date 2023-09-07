@@ -23,12 +23,12 @@ export default function TopSection() {
           </a>
         </li>
       </ul>
-      <div className="grid md:grid-cols-2 mt-5 gap-4">
+      <div className="grid lg:grid-cols-2 mt-5 gap-4">
         <ImageCard
           imgSrc={"/img/img-1.png"}
           imgAlt={"A caption for the above image."}
           captionText={"A caption for the above image."}
-          className="h-56 md:h-[21rem]"
+          className="h-56 lg:h-[21rem]"
           link="#"
         />
 

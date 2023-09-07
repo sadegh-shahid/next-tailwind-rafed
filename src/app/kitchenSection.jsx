@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function KitchenSection() {
-  return (
-    <div>kitchenSection</div>
-  )
+  return <div>kitchenSection</div>;
 }
