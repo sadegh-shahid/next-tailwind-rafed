@@ -18,20 +18,18 @@ export default function SectionBigBox(props) {
       </div>
       <div className="p-2">
         <h4 className=" text-rafedGray-g1 font-bold text-center text-sm">
-          <a href={props.link}>بطاطس بالجبـن الموزاريـلا</a>
+          <a href={props.link}>{props.title}</a>
         </h4>
         <div className="flex items-center pt-3 text-xs mt-3">
           <a href="#" className="text-rafedPurple">
-            أطيب طبخة
+            {props.author}
           </a>
-          <span className="ms-auto me-1">1245</span>
+          <span className="ms-auto me-1">{props.viewCount}</span>
           <EyeFill className="text-base text-rafedGray-g2" />
-          <span className="mx-1">2135</span>
+          <span className="mx-1">{props.likeCount}</span>
           <HeartFill className="mt-[2px] text-rafedGray-g2" />
         </div>
-        <p className=" pt-2 text-sm">
-          تقدّم ل5 أشخاص ــ وقت التحضير: 10 دقيقة. وقت الطبــخ: 20 دقيقة. مجموع
-          الوقت: 30 دقيقـة. المكوّنـات ...
+        <p className=" pt-2 text-sm">{props.description}
         </p>
       </div>
     </div>
