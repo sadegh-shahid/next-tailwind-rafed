@@ -2,8 +2,12 @@ import React from "react";
 import { EyeFill, HeartFill } from "react-bootstrap-icons";
 
 export default function SectionBigBox(props) {
+  let className = "";
+  if (props.className) {
+    className = props.className;
+  }
   return (
-    <div className="flex bg-rafedWhite-w1 rounded-xl">
+    <div className={`${className} flex bg-rafedWhite-w1 rounded-xl lg:w-4/12`}>
       <div className="relative  w-11/12">
         <img src={props.imgSrc} alt="image box" className="h-full w-full" />
         <div className="flex items-center w-12 absolute bottom-5 left-0 rounded-r-md bg-rafedWhite-w1 bg-opacity-75">

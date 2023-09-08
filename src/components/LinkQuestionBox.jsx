@@ -6,7 +6,7 @@ export default function LinkQuestionBox(props) {
     <a
       href={props.link}
       className={
-        " flex first:mt-10 lg:first:mt-0 px-3 py-5 odd:bg-rafedWhite-w2"
+        " flex first:mt-10 lg:first:mt-0 px-3 lg:ps-0 py-5 odd:bg-rafedWhite-w2"
       }
     >
       <QuestionCircleFill className="text-rafedPurple w-9 text-2xl" />

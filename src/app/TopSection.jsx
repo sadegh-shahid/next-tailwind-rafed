@@ -28,7 +28,7 @@ export default function TopSection() {
           imgSrc={"/img/img-1.png"}
           imgAlt={"A caption for the above image."}
           captionText={"A caption for the above image."}
-          className="h-56 lg:h-[21rem]"
+          className="h-56 lg:h-[21rem] drop-shadow-xl"
           link="#"
         />
 
@@ -37,28 +37,28 @@ export default function TopSection() {
             imgSrc={"/img/img-1.png"}
             imgAlt={"A caption for the above image."}
             captionText={"A caption for the above image."}
-            className="h-40"
+            className="h-40 drop-shadow-xl"
             link="#"
           />
           <ImageCard
             imgSrc={"/img/img-1.png"}
             imgAlt={"A caption for the above image."}
             captionText={"A caption for the above image."}
-            className="h-40"
+            className="h-40 drop-shadow-xl"
             link="#"
           />
           <ImageCard
             imgSrc={"/img/img-1.png"}
             imgAlt={"A caption for the above image."}
             captionText={"A caption for the above image."}
-            className="h-40"
+            className="h-40 drop-shadow-xl"
             link="#"
           />
           <ImageCard
             imgSrc={"/img/img-1.png"}
             imgAlt={"A caption for the above image."}
             captionText={"A caption for the above image."}
-            className="h-40"
+            className="h-40 drop-shadow-xl"
             link="#"
           />
         </div>

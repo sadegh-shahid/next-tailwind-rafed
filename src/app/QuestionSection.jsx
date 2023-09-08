@@ -6,9 +6,9 @@ import { Search, ThreeDots } from "react-bootstrap-icons";
 export default function QuestionSection() {
   return (
     <>
-      <SectionTitle title="اسألي الفقيه" className="px-3" />
+      <SectionTitle title="اسألي الفقيه" className="px-3 lg:ps-0" />
       <div className="lg:flex lg:flex-row-reverse ">
-        <div className="px-3 lg:w-3/12">
+        <div className="px-3 lg:pe-0 lg:w-3/12">
           <div className="flex bg-rafedPurple text-rafedWhite-w1 py-3 px-4 rounded-[10px] items-center">
             <input
               type="text"

@@ -1,3 +1,6 @@
+"use client"
+
+
 import { Header, Footer } from "../components/ExportComponents";
 import TopSection from "./TopSection";
 import QuestionSection from "./QuestionSection";
