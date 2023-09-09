@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function SectionTitle(props) {
-  let className="";
+  let className = "";
   if (props.className) {
-    className=props.className;
+    className = props.className;
   }
 
   return (

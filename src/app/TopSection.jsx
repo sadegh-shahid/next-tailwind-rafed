@@ -25,40 +25,45 @@ export default function TopSection() {
       </ul>
       <div className="grid lg:grid-cols-2 mt-5 gap-4">
         <ImageCard
-          imgSrc={"/img/img-1.png"}
+          imgSrc={"/img/img4.png"}
           imgAlt={"A caption for the above image."}
           captionText={"A caption for the above image."}
           className="h-56 lg:h-[21rem] drop-shadow-xl"
+          linkClass="lg:h-[21rem]"
           link="#"
         />
 
         <div className="grid grid-cols-2 gap-4">
           <ImageCard
-            imgSrc={"/img/img-1.png"}
+            imgSrc={"/img/img4.png"}
             imgAlt={"A caption for the above image."}
             captionText={"A caption for the above image."}
             className="h-40 drop-shadow-xl"
+            linkClass="h-40"
             link="#"
           />
           <ImageCard
-            imgSrc={"/img/img-1.png"}
+            imgSrc={"/img/img4.png"}
             imgAlt={"A caption for the above image."}
             captionText={"A caption for the above image."}
             className="h-40 drop-shadow-xl"
+            linkClass="h-40"
             link="#"
           />
           <ImageCard
-            imgSrc={"/img/img-1.png"}
+            imgSrc={"/img/img4.png"}
             imgAlt={"A caption for the above image."}
             captionText={"A caption for the above image."}
             className="h-40 drop-shadow-xl"
+            linkClass="h-40"
             link="#"
           />
           <ImageCard
-            imgSrc={"/img/img-1.png"}
+            imgSrc={"/img/img4.png"}
             imgAlt={"A caption for the above image."}
             captionText={"A caption for the above image."}
             className="h-40 drop-shadow-xl"
+            linkClass="h-40"
             link="#"
           />
         </div>

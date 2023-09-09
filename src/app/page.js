@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 import { Header, Footer } from "../components/ExportComponents";
 import TopSection from "./TopSection";

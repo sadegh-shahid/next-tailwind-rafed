@@ -6,13 +6,16 @@ export default function SectionSmallBox(props) {
     className = props.className;
   }
   return (
-    <div className={`${className} rounded-md  bg-rafedWhite-w1 mt-5 lg:odd:mt-0 lg:even:mt-auto `}>
+    <div
+      className={`${className} rounded-md h-fit  mt-5 lg:odd:mt-0 lg:even:mt-0 `}
+    >
       <a href={props.link} className="flex items-center">
-        <img src={props.imgSrc} alt="image6" className="w-16" />
-        <h4 className="ms-4">{props.title}
-          <span className="text-xs ms-2">
-            {props.titleSpan}</span></h4>
+        <img src={props.imgSrc} alt="img4" className="w-16 rounded-r-[5px]" />
+        <h4 className="ms-4">
+          {props.title}
+          <span className="text-xs ms-2">{props.titleSpan}</span>
+        </h4>
       </a>
     </div>
-  )
+  );
 }

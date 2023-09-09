@@ -6,10 +6,18 @@ export default function SectionBigBox(props) {
   if (props.className) {
     className = props.className;
   }
+  let displayClass = props.className.search("block");
+  if (!displayClass) {
+    className = className + "";
+  } else className = className + " flex";
   return (
-    <div className={`${className} flex bg-rafedWhite-w1 rounded-xl lg:w-4/12`}>
-      <div className="relative  w-11/12">
-        <img src={props.imgSrc} alt="image box" className="h-full w-full" />
+    <div className={`${className}  rounded-xl `}>
+      <div className={`relative  ${props.imgDivClass}`}>
+        <img
+          src={props.imgSrc}
+          alt="image box"
+          className={`h-full ${props.imgClass} `}
+        />
         <div className="flex items-center w-12 absolute bottom-5 left-0 rounded-r-md bg-rafedWhite-w1 bg-opacity-75">
           <span className="text-rafedPurple border-l border-l-rafedGray-g2 px-1 font-bold text-xs text-center align-middle">
             05
@@ -33,8 +41,7 @@ export default function SectionBigBox(props) {
           <span className="mx-1">{props.likeCount}</span>
           <HeartFill className="mt-[2px] text-rafedGray-g2" />
         </div>
-        <p className=" pt-2 text-sm">{props.description}
-        </p>
+        <p className=" pt-2 text-sm">{props.description}</p>
       </div>
     </div>
   );

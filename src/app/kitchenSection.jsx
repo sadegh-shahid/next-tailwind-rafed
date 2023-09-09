@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
 import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination } from 'swiper/modules';
-import { register } from 'swiper/element/bundle';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Pagination } from "swiper/modules";
+import { register } from "swiper/element/bundle";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 import SectionBigBox from "@/components/SectionBigBox";
 import SectionTitle from "@/components/SectionTitle";
 export default function KitchenSection() {
@@ -14,10 +14,10 @@ export default function KitchenSection() {
 
   return (
     <div>
-    <SectionTitle title="مطبخ"/>
+      <SectionTitle title="مطبخ" />
       <Swiper
-        slidesPerView={2}
-        spaceBetween={30}
+        slidesPerView={2.2}
+        spaceBetween={20}
         freeMode={true}
         pagination={{
           clickable: true,
@@ -32,24 +32,97 @@ export default function KitchenSection() {
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+            slidesPerView: 6,
+            spaceBetween: 30,
           },
         }}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <SectionBigBox link="#" className="block" imgSrc="/img/image7.png" title="بطاطس بالجبـن الموزاريـلا" description="" author="أطيب طبخة" likeCount="4545" viewCount="1234" />
+          <SectionBigBox
+            link="#"
+            className="block w-full border bg-rafedWhite-w1 border-rafedGray-g4"
+            imgDivClass="w-full"
+            imgClass=" w-full  rounded-t-xl "
+            imgSrc="/img/img4.png"
+            title="بطاطس بالجبـن الموزاريـلا"
+            description=""
+            author="أطيب طبخة"
+            likeCount="4545"
+            viewCount="1234"
+          />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <SectionBigBox
+            link="#"
+            className="block w-full border bg-rafedWhite-w1 border-rafedGray-g4"
+            imgDivClass="w-full"
+            imgClass=" w-full  rounded-t-xl "
+            imgSrc="/img/img4.png"
+            title="بطاطس بالجبـن الموزاريـلا"
+            description=""
+            author="أطيب طبخة"
+            likeCount="4545"
+            viewCount="1234"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SectionBigBox
+            link="#"
+            className="block w-full border bg-rafedWhite-w1 border-rafedGray-g4"
+            imgDivClass="w-full"
+            imgClass=" w-full  rounded-t-xl "
+            imgSrc="/img/img4.png"
+            title="بطاطس بالجبـن الموزاريـلا"
+            description=""
+            author="أطيب طبخة"
+            likeCount="4545"
+            viewCount="1234"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SectionBigBox
+            link="#"
+            className="block w-full border bg-rafedWhite-w1 border-rafedGray-g4"
+            imgDivClass="w-full"
+            imgClass=" w-full  rounded-t-xl "
+            imgSrc="/img/img4.png"
+            title="بطاطس بالجبـن الموزاريـلا"
+            description=""
+            author="أطيب طبخة"
+            likeCount="4545"
+            viewCount="1234"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SectionBigBox
+            link="#"
+            className="block w-full border bg-rafedWhite-w1 border-rafedGray-g4"
+            imgDivClass="w-full"
+            imgClass=" w-full  rounded-t-xl "
+            imgSrc="/img/img4.png"
+            title="بطاطس بالجبـن الموزاريـلا"
+            description=""
+            author="أطيب طبخة"
+            likeCount="4545"
+            viewCount="1234"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SectionBigBox
+            link="#"
+            className="block w-full border bg-rafedWhite-w1 border-rafedGray-g4"
+            imgDivClass="w-full"
+            imgClass=" w-full  rounded-t-xl "
+            imgSrc="/img/img4.png"
+            title="بطاطس بالجبـن الموزاريـلا"
+            description=""
+            author="أطيب طبخة"
+            likeCount="4545"
+            viewCount="1234"
+          />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
