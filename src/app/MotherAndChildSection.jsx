@@ -11,8 +11,8 @@ export default function MotherAndChildSection() {
         <SectionBigBox
           link="#"
           imgSrc="/img/img4.png"
-          imgDivClass="w-11/12"
-          imgClass="w-40 rounded-r-[11px]"
+          imgDivClass="w-fit"
+          imgClass="w-80 rounded-r-xl"
           title="بطاطس بالجبـن الموزاريـلا"
           description="  تقدّم ل5 أشخاص ــ وقت التحضير: 10 دقيقة. وقت الطبــخ: 20 دقيقة. مجموع
           الوقت: 30 دقيقـة. المكوّنـات ..."

@@ -11,8 +11,8 @@ export default function EnmatSection() {
         <SectionBigBox
           link="#"
           imgSrc="/img/img4.png"
-          imgDivClass="w-11/12"
-          imgClass="w-40 rounded-r-xl"
+          imgDivClass="w-fit"
+          imgClass="w-80 rounded-r-xl"
           title="بطاطس بالجبـن الموزاريـلا"
           description="  تقدّم ل5 أشخاص ــ وقت التحضير: 10 دقيقة. وقت الطبــخ: 20 دقيقة. مجموع الوقت: 30 دقيقـة. المكوّنـات ..."
           author="أطيب طبخة"
@@ -23,28 +23,28 @@ export default function EnmatSection() {
         <div className="lg:w-8/12">
           <div className="lg:grid grid-cols-3 w-full h-full lg:gap-5 flex-wrap">
             <SectionSmallBox
-            className="bg-rafedWhite-w1"
+              className="bg-rafedWhite-w1"
               link="#"
               imgSrc="/img/img4.png"
               title="الامام الحسين"
               titleSpan="صلوات الله عليهما"
             />
             <SectionSmallBox
-            className="bg-rafedWhite-w1"
+              className="bg-rafedWhite-w1"
               link="#"
               imgSrc="/img/img4.png"
               title="الامام الحسين"
               titleSpan="صلوات الله عليهما"
             />
             <SectionSmallBox
-            className="bg-rafedWhite-w1"
+              className="bg-rafedWhite-w1"
               link="#"
               imgSrc="/img/img4.png"
               title="الامام الحسين"
               titleSpan="صلوات الله عليهما"
             />
             <SectionSmallBox
-            className="bg-rafedWhite-w1"
+              className="bg-rafedWhite-w1"
               link="#"
               imgSrc="/img/img4.png"
               title="الامام الحسين"

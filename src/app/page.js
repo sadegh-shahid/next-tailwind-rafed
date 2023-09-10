@@ -12,7 +12,7 @@ import React from "react";
 export default function Home() {
   return (
     <>
-      <header className="bg-rafedWhite-w1 h-14 lg:h-16 lg:px-32 drop-shadow-xl flex items-center px-4">
+      <header className="bg-rafedWhite-w1 h-14 lg:h-16 lg:px-32 drop-shadow-xl flex items-center px-4 sticky z-10">
         <Header></Header>
       </header>
       <main className="mt-16">

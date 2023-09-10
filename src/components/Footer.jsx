@@ -8,10 +8,15 @@ export default function Footer() {
           <img src={"/svg/logo-footer.svg"} alt="logo footer" />
         </a>
         <div className="flex items-center gap-3 mt-5">
-          <a href="#" className="border-l pe-2 border-rafedGray-g1">
+          <a
+            href="#"
+            className="border-l pe-2 border-rafedGray-g1 font-bold text-sm"
+          >
             درباره ما
           </a>
-          <a href="#">درباره ما</a>
+          <a href="#" className="font-bold text-sm">
+            درباره ما
+          </a>
           <a href="#" className="ms-auto">
             <img src={"/svg/Instgram.svg"} alt="Instgram" />
           </a>

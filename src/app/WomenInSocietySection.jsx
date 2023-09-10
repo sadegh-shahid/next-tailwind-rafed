@@ -12,8 +12,8 @@ export default function WomenInSocietySection() {
           className="border-rafedGray-g4 border"
           link="#"
           imgSrc="/img/img4.png"
-          imgDivClass="w-11/12"
-          imgClass="w-40 rounded-r-xl"
+          imgDivClass="w-fit"
+          imgClass="w-80 rounded-r-xl"
           title="بطاطس بالجبـن الموزاريـلا"
           description="  تقدّم ل5 أشخاص ــ وقت التحضير: 10 دقيقة. وقت الطبــخ: 20 دقيقة. مجموع
           الوقت: 30 دقيقـة. المكوّنـات ..."
