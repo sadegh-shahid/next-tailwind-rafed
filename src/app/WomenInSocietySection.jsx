@@ -9,11 +9,11 @@ export default function WomenInSocietySection() {
       <SectionTitle title="المرأة في المجتمع" />
       <div className="lg:flex lg:gap-x-5 ">
         <SectionBigBox
-          className="border-rafedGray-g4 border"
+          className="border-rafedGray-g4 border lg:w-4/12  h-36"
           link="#"
           imgSrc="/img/img4.png"
           imgDivClass="w-fit"
-          imgClass="w-80 rounded-r-xl"
+          imgClass=" w-80 rounded-r-xl"
           title="بطاطس بالجبـن الموزاريـلا"
           description="  تقدّم ل5 أشخاص ــ وقت التحضير: 10 دقيقة. وقت الطبــخ: 20 دقيقة. مجموع
           الوقت: 30 دقيقـة. المكوّنـات ..."

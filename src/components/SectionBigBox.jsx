@@ -11,7 +11,7 @@ export default function SectionBigBox(props) {
     className = className + "";
   } else className = className + " flex";
   return (
-    <div className={`${className}  rounded-xl `}>
+    <div className={`${className}  rounded-xl  h-36 `}>
       <div className={`relative  ${props.imgDivClass}`}>
         <img
           src={props.imgSrc}
