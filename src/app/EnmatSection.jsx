@@ -1,6 +1,4 @@
-import SectionBigBox from "@/components/SectionBigBox";
-import SectionSmallBox from "@/components/SectionSmallBox";
-import SectionTitle from "@/components/SectionTitle";
+import { SectionBigBox, SectionSmallBox, SectionTitle } from "@/components/ExportComponents";
 import React from "react";
 
 export default function EnmatSection() {

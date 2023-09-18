@@ -1,5 +1,4 @@
-import LinkQuestionBox from "@/components/LinkQuestionBox";
-import SectionTitle from "@/components/SectionTitle";
+import {LinkQuestionBox, SectionTitle} from "@/components/ExportComponents";
 import React from "react";
 import { Search, ThreeDots } from "react-bootstrap-icons";
 

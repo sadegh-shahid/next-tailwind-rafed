@@ -2,14 +2,23 @@
 
 
 import React from "react";
-import SectionBigBox from "@/components/SectionBigBox";
-import SectionTitle from "@/components/SectionTitle";
+import { SectionTitle, Slider } from "@/components/ExportComponents";
+
 export default function KitchenSection() {
+
+
+  return (
+    <>
+      <SectionTitle title="مطبخ" />
+      <Slider></Slider>
+    </>
+  )
 
   return (
     <div>
       <SectionTitle title="مطبخ" />
 
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
 
       <SectionBigBox
         link="#"
@@ -23,7 +32,6 @@ export default function KitchenSection() {
         likeCount="4545"
         viewCount="1234"
       />
-
 
     </div>
   );

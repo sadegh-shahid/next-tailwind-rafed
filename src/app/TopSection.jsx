@@ -1,5 +1,5 @@
 import React from "react";
-import ImageCard from "@/components/ImageCard";
+import {ImageCard} from "@/components/ExportComponents";
 import { HouseDoorFill, ChevronLeft } from "react-bootstrap-icons";
 export default function TopSection() {
   return (

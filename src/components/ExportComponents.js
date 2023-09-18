@@ -1,3 +1,9 @@
 import Header from "./Header";
 import Footer from "./Footer";
-export { Header, Footer };
+import Slider from "./Slider";
+import ImageCard from "./ImageCard";
+import LinkQuestionBox from "./LinkQuestionBox";
+import SectionBigBox from "./SectionBigBox";
+import SectionSmallBox from "./SectionSmallBox";
+import SectionTitle from "./SectionTitle";
+export { Header, Footer, Slider, ImageCard, LinkQuestionBox, SectionBigBox, SectionSmallBox, SectionTitle };
