@@ -1,4 +1,8 @@
-import { ImageCard, SectionBigBox, SectionTitle } from "@/components/ExportComponents";
+import {
+  ImageCard,
+  SectionBigBox,
+  SectionTitle,
+} from "@/components/ExportComponents";
 import React from "react";
 
 export default function WomenInSocietySection() {

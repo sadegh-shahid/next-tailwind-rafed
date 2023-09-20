@@ -13,10 +13,18 @@ export default function QuestionSection() {
               className="bg-rafedPurple text-rafedWhite-w1  font-Almarai placeholder:text-rafedWhite-w1 placeholder:font-Almarai w-full ml-4 focus-visible:border-none"
               placeholder="بحث في استفتائات ..."
             />
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 ms-auto">
-              <path fillRule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clipRule="evenodd" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-5 h-5 ms-auto"
+            >
+              <path
+                fillRule="evenodd"
+                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                clipRule="evenodd"
+              />
             </svg>
-
           </div>
 
           <div className="rounded-lg bg-rafedGray-g5 flex pl-3 my-7">
@@ -58,11 +66,18 @@ export default function QuestionSection() {
               href="#"
               className="flex justify-center w-full h-full text-rafedWhite-w1 border-rafedGray-g4 border rounded-full "
             >
-
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7 text-rafedGray-g2" >
-                <path fillRule="evenodd" d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" clipRule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-7 h-7 text-rafedGray-g2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                  clipRule="evenodd"
+                />
               </svg>
-
             </a>
           </button>
         </div>
