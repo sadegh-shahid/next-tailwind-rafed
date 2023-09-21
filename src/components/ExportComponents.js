@@ -6,6 +6,7 @@ import LinkQuestionBox from "./LinkQuestionBox";
 import SectionBigBox from "./SectionBigBox";
 import SectionSmallBox from "./SectionSmallBox";
 import SectionTitle from "./SectionTitle";
+import Modal from "./Modal";
 export {
   Header,
   Footer,
@@ -15,4 +16,5 @@ export {
   SectionBigBox,
   SectionSmallBox,
   SectionTitle,
+  Modal,
 };
