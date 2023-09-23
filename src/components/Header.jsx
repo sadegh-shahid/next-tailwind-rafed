@@ -13,9 +13,16 @@ export default function Header() {
     setShowHeaderModal(!showHeaderModal);
   };
 
-  if (showHeaderOffcanvas || showHeaderModal) {
-    document.body.className = "overflow-hidden h-full "
-  }
+  useEffect(() => {
+    if (showHeaderOffcanvas || showHeaderModal) {
+      document.body.classList.add("overflow-hidden")
+    }
+    else {
+      document.body.classList.remove("overflow-hidden")
+    }
+  }, [showHeaderOffcanvas, showHeaderModal])
+
+
 
   return (
     <>
@@ -191,7 +198,7 @@ export default function Header() {
         </div>
       )}
 
-      {showHeaderModal && <Modal onClick={toggleModal}/>}
+      {showHeaderModal && <Modal onClose={toggleModal} />}
 
 
 
