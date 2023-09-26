@@ -7,6 +7,7 @@ import SectionBigBox from "./SectionBigBox";
 import SectionSmallBox from "./SectionSmallBox";
 import SectionTitle from "./SectionTitle";
 import Modal from "./Modal";
+import Offcanvas from "./Offcanvas";
 export {
   Header,
   Footer,
@@ -17,4 +18,5 @@ export {
   SectionSmallBox,
   SectionTitle,
   Modal,
+  Offcanvas,
 };

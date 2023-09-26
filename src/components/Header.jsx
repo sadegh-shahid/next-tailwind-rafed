@@ -1,35 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Modal } from "./ExportComponents";
-import 'alpinejs';
-export default function Header() {
-  const [showHeaderOffcanvas, setShowHeaderOffcanvas] = useState(false);
+export default function Header(props) {
   const [showHeaderModal, setShowHeaderModal] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
 
-  const toggleOffcanvas = () => {
-    setShowHeaderOffcanvas(!showHeaderOffcanvas);
-  };
   const toggleModal = () => {
     setShowHeaderModal(!showHeaderModal);
   };
 
-const al
-
   useEffect(() => {
-    if (showHeaderOffcanvas || showHeaderModal) {
-      document.body.classList.add("overflow-hidden")
+    if (showHeaderModal) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
     }
-    else {
-      document.body.classList.remove("overflow-hidden")
-    }
-  }, [showHeaderOffcanvas, showHeaderModal])
-
-
+  }, [showHeaderModal]);
 
   return (
     <>
-
-
       <nav
         className="hidden space-x-8 text-xl lg:block lg:order-2"
         aria-label="main"
@@ -54,72 +42,23 @@ const al
         </a>
       </nav>
 
-      <div x-data="{ showHeaderOffcanvas: false }">
-      <button x-on:click="showHeaderOffcanvas = !showHeaderOffcanvas">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-rafedGray-g2 lg:hidden cursor-pointer" id="hamburger-button">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-    </svg>
-  </button>
-
-        <div x-show="showHeaderOffcanvas">
-        <div className="mobile-menu-bg min-h-screen min-w-full absolute bg-rafedGray-g1 bg-opacity-70 right-0 top-0 justify-center" x-on:click="showHeaderOffcanvas = false"></div>
-          <section className="mobile-menu right-0 top-0 w-2/3 absolute origin-right transition-all  flex-col text-base  bg-rafedWhite-w1">
-            <nav
-              className="flex min-h-screen flex-col items-start py-2"
-              aria-label="mobile"
-            >
-              <div className="flex justify-between items-center w-full pe-4">
-                <a href="#">
-                  <img
-                    src={"/svg/Logo-small.svg"}
-                    alt="logo-small"
-                    className=" h-20 -mr-1 mt-4 "
-                  />
-                </a>
-
-                <button onClick={toggleOffcanvas}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-8 h-8 text-rafedGray-g4"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <a href="#hero" className="w-full py-3 px-6 hover:opacity-90">
-                صفحه اصلی
-              </a>
-              <a
-                href="#rockets"
-                className="w-full py-3 px-6 hover:opacity-90 lg:"
-              >
-                ريحانة
-              </a>
-              <a
-                href="#testimonials"
-                className="w-full py-3 px-6 hover:opacity-90"
-              >
-                ريحانة
-              </a>
-              <a href="#contact" className="w-full py-3 px-6 hover:opacity-90">
-                ريحانة
-              </a>
-              <a href="#footer" className="w-full py-3 px-6 hover:opacity-90">
-                ريحانة
-              </a>
-            </nav>
-          </section>
-        </div>
-
-
-       </div>
-
+      <button onClick={props.onOpen}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="w-6 h-6  text-rafedGray-g2 lg:hidden cursor-pointer"
+          id="hamburger-button"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
 
       <button onClick={toggleModal}>
         <svg
@@ -137,30 +76,41 @@ const al
         </svg>
       </button>
 
-
-  
-
-
-
       {showHeaderModal && <Modal onClose={toggleModal} />}
 
       <img src="/svg/Logo-small.svg" alt="Logo" className="w-16 h-16" />
 
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-rafedGray-g2">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6 text-rafedGray-g2"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
+        />
       </svg>
-
-
-
-
-
 
       {isLogin ? (
         <div className="relative group ">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-6  text-rafedGray-g2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-5 h-6  text-rafedGray-g2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+            />
           </svg>
-
 
           <div className="bg-rafedWhite-w1 rounded-md hidden group-hover:flex justify-between items-center w-28 h-10 px-2 mt-5 absolute left-0 top-2 drop-shadow-lg">
             <h4 className="">خروج</h4>
@@ -199,8 +149,6 @@ const al
           </svg>
         </div>
       )}
-
-
     </>
   );
 }
