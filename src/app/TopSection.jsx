@@ -3,7 +3,7 @@ import { ImageCard } from "@/components/ExportComponents";
 export default function TopSection() {
   return (
     <>
-      <ul className="flex items-center font-Almarai">
+      {/* <ul className="flex items-center font-Almarai">
         <li className="flex items-center">
           <a href="#">
             <svg
@@ -99,7 +99,7 @@ export default function TopSection() {
             link="#"
           />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

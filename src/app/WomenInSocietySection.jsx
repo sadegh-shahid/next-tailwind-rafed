@@ -8,7 +8,7 @@ import React from "react";
 export default function WomenInSocietySection() {
   return (
     <div>
-      <SectionTitle title="المرأة في المجتمع" />
+      {/* <SectionTitle title="المرأة في المجتمع" />
       <div className="lg:flex lg:gap-x-5 ">
         <SectionBigBox
           className="border-rafedGray-g4 border lg:w-4/12  h-36"
@@ -61,7 +61,7 @@ export default function WomenInSocietySection() {
             link="#"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

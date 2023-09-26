@@ -8,7 +8,7 @@ import React from "react";
 export default function EnmatSection() {
   return (
     <>
-      <SectionTitle title="انماط الحياة" />
+      {/* <SectionTitle title="انماط الحياة" />
       <div className="lg:flex lg:gap-x-5">
         <SectionBigBox
           link="#"
@@ -68,7 +68,7 @@ export default function EnmatSection() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
