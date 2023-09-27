@@ -36,6 +36,7 @@ export default function Home() {
         setSmall(true);
 
       }
+      ////why its loging 2 times?
 console.log(lastScrollTop)
       lastScrollTop = scrollTop;
     });
