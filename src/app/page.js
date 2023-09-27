@@ -23,6 +23,23 @@ export default function Home() {
     }
   }, [showHeaderOffcanvas]);
 
+  const [isSmall, setSmall] = useState(false);
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+    window.addEventListener('scroll', function () {
+      let scrollTop = window.scrollY;
+      if (scrollTop < lastScrollTop) {
+        setSmall(false);
+      }
+      else {
+        setSmall(true);
+
+      }
+console.log(lastScrollTop)
+      lastScrollTop = scrollTop;
+    });
+  })
   return (
     <>
       <Offcanvas
@@ -30,7 +47,7 @@ export default function Home() {
         onOpen={toggleOffcanvas}
       ></Offcanvas>
 
-      <header className="bg-rafedWhite-w1 h-16 lg:h-16 lg:px-32 drop-shadow-xl flex items-center justify-around px-2 fixed bottom-0 w-full z-10">
+      <header className={`bg-rafedWhite-w1 lg:h-16 lg:px-32 shadow-2xl shadow-rafedGray-g1 flex items-center justify-around  px-2 py-1 fixed bottom-0 w-full z-10  ${isSmall ? 'h-7' : 'h-17'}`}>
         <Header onOpen={toggleOffcanvas}></Header>
       </header>
 
