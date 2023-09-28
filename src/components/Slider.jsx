@@ -35,8 +35,7 @@ export default function Slider() {
           imgSrc="/img/img4.png"
           title="بطاطس بالجبـن الموزاريـلا"
           author="أطيب طبخة"
-          likeCount="4545"
-          viewCount="1234"
+          datePublished="2022/10/27"
         />
       </SwiperSlide>
 

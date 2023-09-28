@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Modal } from "./ExportComponents";
-export default function Header(props) {
+export default function Header({ onOpen, isSmall }) {
   const [showHeaderModal, setShowHeaderModal] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
 
@@ -15,6 +15,7 @@ export default function Header(props) {
       document.body.classList.remove("overflow-hidden");
     }
   }, [showHeaderModal]);
+
 
   return (
     <>
@@ -42,13 +43,13 @@ export default function Header(props) {
         </a>
       </nav>
       <div className="flex flex-col items-center justify-center h-fit py-2 w-1/5" id="hamburger-button">
-        <button onClick={props.onOpen}>
+        <button onClick={onOpen}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
 
         </button>
-        <h6 className="text-sm text-rafedGray-g1 mt-auto">menu</h6>
+        {!isSmall && <h6 className="text-sm text-rafedGray-g1 mt-auto">menu</h6>}
       </div>
       <div className="flex flex-col items-center justify-center h-fit py-2 w-1/5">
         <button onClick={toggleModal}>
@@ -66,7 +67,7 @@ export default function Header(props) {
             />
           </svg>
         </button>
-        <h6 className="text-sm text-rafedGray-g1 mt-auto">search</h6>
+        {!isSmall && <h6 className="text-sm text-rafedGray-g1 mt-auto">search</h6>}
       </div>
 
       {showHeaderModal && <Modal onClose={toggleModal} />}
@@ -89,7 +90,7 @@ export default function Header(props) {
             />
           </svg>
         </button>
-        <h6 className="text-sm text-rafedGray-g1 mt-auto">icon</h6>
+        {!isSmall && <h6 className="text-sm text-rafedGray-g1 mt-auto">icon</h6>}
       </div>
 
 
@@ -112,7 +113,7 @@ export default function Header(props) {
             </svg>
 
             <div className="bg-rafedWhite-w1 rounded-md hidden group-hover:flex justify-between items-center w-28 h-10 px-2 mt-5 absolute left-0 top-2 drop-shadow-lg">
-              <h4 className="">خروج</h4>
+              <h4>خروج</h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -132,7 +133,7 @@ export default function Header(props) {
               </svg>
             </div>
           </div>
-          <h6 className="text-sm text-rafedGray-g1 mt-auto">icon</h6>
+          {!isSmall && <h6 className="text-sm text-rafedGray-g1 mt-auto">icon</h6>}
 
         </div>
       ) : (
@@ -149,7 +150,7 @@ export default function Header(props) {
               clipRule="evenodd"
             />
           </svg>
-          <h6 className="text-sm text-rafedGray-g1 mt-auto">icon</h6>
+          {!isSmall && <h6 className="text-sm text-rafedGray-g1 mt-auto">icon</h6>}
         </div>
       )}
     </>

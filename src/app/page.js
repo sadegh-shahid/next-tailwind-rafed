@@ -7,7 +7,7 @@ import EnmatSection from "./EnmatSection";
 import WomenInSocietySection from "./WomenInSocietySection";
 import KitchenSection from "./KitchenSection";
 import MotherAndChildSection from "./MotherAndChildSection";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   const [showHeaderOffcanvas, setShowHeaderOffcanvas] = useState(false);
@@ -24,23 +24,20 @@ export default function Home() {
   }, [showHeaderOffcanvas]);
 
   const [isSmall, setSmall] = useState(false);
+  const lastScrollTopRef = useRef(0);
 
   useEffect(() => {
-    let lastScrollTop = 0;
     window.addEventListener('scroll', function () {
       let scrollTop = window.scrollY;
-      if (scrollTop < lastScrollTop) {
+      if (scrollTop < lastScrollTopRef.current) {
         setSmall(false);
-      }
-      else {
+      } else {
         setSmall(true);
-
       }
-      ////why its loging 2 times?
-console.log(lastScrollTop)
-      lastScrollTop = scrollTop;
+      lastScrollTopRef.current = scrollTop;
     });
-  })
+  }, []);
+
   return (
     <>
       <Offcanvas
@@ -48,8 +45,8 @@ console.log(lastScrollTop)
         onOpen={toggleOffcanvas}
       ></Offcanvas>
 
-      <header className={`bg-rafedWhite-w1 lg:h-16 lg:px-32 shadow-2xl shadow-rafedGray-g1 flex items-center justify-around  px-2 py-1 fixed bottom-0 w-full z-10  ${isSmall ? 'h-7' : 'h-17'}`}>
-        <Header onOpen={toggleOffcanvas}></Header>
+      <header className={`bg-rafedWhite-w1 lg:h-16 lg:px-32 shadow-2xl shadow-rafedGray-g1 flex items-center justify-around  px-2 py-1 fixed bottom-0 w-full z-10  ${isSmall ? 'h-14' : 'h-17'}`}>
+        <Header onOpen={toggleOffcanvas} isSmall={isSmall} />
       </header>
 
       <main>
@@ -73,7 +70,7 @@ console.log(lastScrollTop)
         </section>
       </main>
 
-      <footer className="mb-16">
+      <footer className={"mb-16"}>
         <Footer></Footer>
       </footer>
     </>
